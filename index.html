@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Javascript</title>
- <script src="script.js"></script>
+ <title>Height Predicion</title>
+ <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-  <h1>Click the button below to have some fun.</h1>
-  <button onclick="sayHello()">Click me</button>
-  <p id="demo">Click the button to change the color and ont style of this line.</p>
-  <button onclick="showTopic()">Click me</button>
+  <h1>We'll predict your height according to your parents'.</h1>
+  <h2>Let's do it!</h2>
+  <button onclick="Predict()">Click me</button>
+  <script>
+
+  function Predict(){
+    var response=prompt("What's your name?");
+    var gender=prompt("Are you a boy or a girl?");
+    alert("Hello "+response+", let's see how tall you're going to be!");
+    var father=prompt("Input your father's height(m): ");
+    var mother=prompt("Input your mother's height(m): ");
+    parseFloat(father)
+    parseFloat(mother)
+//if的这一部分不运行，以及不知道怎么使用import，把字符串变成数字参与运算
+    if (gender==="girl"){
+      height=(father* 0.948 + mother) / 2;
+      height2=(father* 0.98 + mother) / 2;
+      alert(response+", you're probably "+height+"~"+height2+"m")
+  }
+    else if(gender==="boy"){
+      height=(father + mother) * 1.11 / 2;
+      height2=(father + mother) * 1.12 / 2;
+      alert(response+", you're probably "+height+"~"+height2+"m")
+  }
+    else{
+      alert("wrong message")
+    }
+  }
+  </script>
 </body>
 </html>
