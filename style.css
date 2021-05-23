@@ -1,10 +1,17 @@
 @import url("https://www.font.im/");
 
 
-html, body{
-  font-family:'Microsoft YaHei';
-  color:#222;
+
+body
+{
+      margin:0px;
+      padding:0px;
+      background-color:#E7EAEB;
+      font-family:"微软雅黑","黑体","宋体";
+      font-size:12px;
+      height:36px;
 }
+
 
 .carousel img{
   width:100%;
@@ -21,14 +28,17 @@ figure{
 }
 #fixed{
   background-image: url('img/背景3.gif');
-  height:300px;
+  height:800px;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: center;
  background-size: cover;
 }
 
+
+
 footer{
-  background-color: #808080;
+  background-color: #696969;
   color:#FFFFFF;
+  font-family: "微软雅黑","黑体","宋体";
 }
